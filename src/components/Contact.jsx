@@ -5,7 +5,7 @@ const Contact = () => (
   <section id="contact" className="contact-section" aria-labelledby="contact-title">
     <div className="contact-shell">
       <p className="section-kicker">LET'S CONNECT</p>
-      <h2 id="contact-title">Have a project, internship, or opportunity in mind?</h2>
+      <h2 id="contact-title">Have a project, role, or opportunity in mind?</h2>
       <p>{profile.availability}</p>
       <div className="contact-actions">
         <a className="button-primary" href={`mailto:${profile.email}`}><Mail size={18} /> Email Me</a>
