@@ -7,6 +7,7 @@ export const profile = {
     'I am an Information Systems student at Telkom University focused on building modern web applications. I enjoy working across frontend, backend, databases, and AI-integrated workflows while choosing tools based on the problem being solved.',
   email: 'gyebran777@gmail.com',
   github: 'https://github.com/Gyebran',
+  avatar: 'https://avatars.githubusercontent.com/u/152045520?v=4',
   availability: 'Open to internship, junior developer, and selected freelance opportunities.',
 }
 
@@ -73,7 +74,7 @@ export const projects = [
     repo: 'https://github.com/Gyebran/WEB_PEMINJAMAN_RUANGAN',
     repoLabel: 'GitHub',
     live: 'https://web-peminjaman-ruangan.vercel.app/',
-    image: '/project/web-peminjaman-ruangan.png',
+    image: null,
     featured: true,
   },
   {
@@ -120,25 +121,25 @@ export const projects = [
 export const certificates = [
   {
     id: 'ai-performance-ads',
-    image: '/sertif/AI-Powered-Performace-Ads-Certification.png',
+    image: null,
     title: 'AI-Powered Performance Ads',
     description: 'Certification focused on using AI-assisted approaches in performance advertising.',
   },
   {
     id: 'business-plan-champion',
-    image: '/sertif/Juara-Business-Plan.png',
+    image: null,
     title: 'Business Plan — 1st Champion',
     description: 'Competition achievement recognizing a business plan presentation and business-development work.',
   },
   {
     id: 'intro-programming',
-    image: '/sertif/Intro-to-Programming.png',
+    image: null,
     title: 'Introduction to Programming',
     description: 'Foundational programming certification covering core programming concepts and problem solving.',
   },
   {
     id: 'python',
-    image: '/sertif/Python.png',
+    image: null,
     title: 'Python',
     description: 'Programming certification focused on Python fundamentals and practical coding concepts.',
   },
