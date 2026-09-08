@@ -1,4 +1,4 @@
-import { Mail, Github, ArrowUpRight } from 'lucide-react'
+import { Mail, Github, MessageCircle, ArrowUpRight } from 'lucide-react'
 import { profile } from '../data/portfolio'
 
 const Contact = () => (
@@ -9,6 +9,7 @@ const Contact = () => (
       <p>{profile.availability}</p>
       <div className="contact-actions">
         <a className="button-primary" href={`mailto:${profile.email}`}><Mail size={18} /> Email Me</a>
+        <a className="button-secondary" href={profile.whatsapp} target="_blank" rel="noopener noreferrer"><MessageCircle size={18} /> WhatsApp <ArrowUpRight size={16} /></a>
         <a className="button-secondary" href={profile.github} target="_blank" rel="noopener noreferrer"><Github size={18} /> GitHub <ArrowUpRight size={16} /></a>
       </div>
       <div className="contact-meta">
