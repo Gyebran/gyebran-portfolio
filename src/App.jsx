@@ -22,6 +22,7 @@ gsap.registerPlugin(ScrollTrigger)
 function App() {
   const containerRef = useRef(null)
   const textRef = useRef(null)
+  const readabilityRef = useRef(null)
 
   const scrollToProjects = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })
@@ -41,7 +42,18 @@ function App() {
         },
       })
 
-      tl.fromTo(textRef.current, { y: '12vh', opacity: 0 }, { y: 0, opacity: 1, ease: 'none' })
+      tl.fromTo(
+        textRef.current,
+        { y: '12vh', opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, ease: 'none' },
+      )
+
+      tl.fromTo(
+        readabilityRef.current,
+        { opacity: 0, scale: 0.985 },
+        { opacity: 1, scale: 1, duration: 0.45, ease: 'none' },
+        0.35,
+      )
     })
 
     return () => media.revert()
@@ -89,6 +101,7 @@ function App() {
           </div>
 
           <div className="hero-copy" ref={textRef}>
+            <div className="hero-readability-layer" ref={readabilityRef} aria-hidden="true" />
             <p className="hero-kicker">PORTFOLIO · 2026</p>
             <h1 id="hero-title">{profile.name}</h1>
             <p className="hero-role">{profile.role}</p>
