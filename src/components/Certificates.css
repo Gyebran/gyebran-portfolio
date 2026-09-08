@@ -101,11 +101,25 @@
     height: 100%;
 }
 
-.cert-card-image-wrapper {
+.cert-card-image-wrapper,
+.cert-card-placeholder {
     width: 100%;
     aspect-ratio: 16 / 9;
     overflow: hidden;
     border-radius: 1rem 1rem 0 0;
+}
+
+.cert-card-placeholder {
+    display: grid;
+    place-items: center;
+    background: radial-gradient(circle at 70% 20%, rgba(255, 140, 0, 0.2), transparent 32%), linear-gradient(145deg, #122238, #07101b);
+}
+
+.cert-card-placeholder span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.08);
 }
 
 .cert-card-image {
