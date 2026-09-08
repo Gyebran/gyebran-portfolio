@@ -28,25 +28,32 @@ export const socials = [
 
 export const experience = [
   {
-    period: 'Current',
+    period: '2023 — Present',
     role: 'Information Systems Student',
     organization: 'Telkom University',
     description:
-      'Developing a foundation in systems analysis, databases, enterprise architecture, software development, and digital product thinking while building academic and personal projects.',
+      'Started studying Information Systems at Telkom University in 2023, developing a foundation across software development, databases, business processes, system architecture, enterprise systems, and digital technology.',
   },
   {
-    period: 'Project Work',
-    role: 'Full-Stack Web Development',
-    organization: 'Academic & Personal Projects',
+    period: '2025',
+    role: 'AI BPMN Maker Development Team',
+    organization: 'AI BPMN Maker',
     description:
-      'Building web applications across Laravel/PHP and React/Next.js/Node.js stacks, including authentication, APIs, database integrations, responsive interfaces, and deployment-oriented workflows.',
+      'Joined the development team behind AI BPMN Maker, contributing to the development of an AI-assisted solution designed around Business Process Model and Notation (BPMN) workflows and process modeling.',
   },
   {
-    period: 'Project Work',
-    role: 'AI-Integrated Applications',
-    organization: 'Interactive Edutainment & Experiments',
+    period: '2025',
+    role: 'Laboratory Instructor — System Architecture & Governance',
+    organization: 'Telkom University',
     description:
-      'Exploring AI-assisted application architecture, including a simple microservices setup connecting a Node.js/TypeScript backend, Next.js frontend, database services, Cloudinary, Docker, and Gemini integration.',
+      'Served as an instructor in the System Architecture and Governance laboratory, supporting learning activities and helping students understand concepts related to system architecture, governance, and enterprise information systems.',
+  },
+  {
+    period: '2026',
+    role: 'Human Resource Service Operation Intern',
+    organization: 'Telkom Indonesia',
+    description:
+      'Joined Telkom Indonesia as an intern in the Human Resource Service Operation unit, gaining direct exposure to enterprise HR service processes, operational workflows, and the way large-scale organizations manage internal services.',
   },
 ]
 
