@@ -10,7 +10,7 @@ const About = () => (
     <div className="about-container">
       <div className="about-left">
         <TiltedCard
-          imageSrc="/profile/aink.png"
+          imageSrc={profile.avatar}
           altText={`${profile.name} profile portrait`}
           captionText={`${profile.shortName} — Full-Stack Developer`}
           containerHeight="500px"
