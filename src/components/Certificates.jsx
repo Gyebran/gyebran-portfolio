@@ -21,7 +21,11 @@ const Certificates = () => {
               <motion.article key={cert.id} className="cert-card-wrapper" initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.45, delay: index * 0.06 }} viewport={{ once: true }}>
                 <GlowingEffect disabled={false} spread={40} glow proximity={80} borderWidth={2} />
                 <div className="cert-card-content">
-                  <div className="cert-card-image-wrapper"><img src={cert.image} alt={`${cert.title} certificate`} className="cert-card-image" loading="lazy" /></div>
+                  {cert.image ? (
+                    <div className="cert-card-image-wrapper"><img src={cert.image} alt={`${cert.title} certificate`} className="cert-card-image" loading="lazy" /></div>
+                  ) : (
+                    <div className="cert-card-placeholder" aria-hidden="true"><span>{String(index + 1).padStart(2, '0')}</span></div>
+                  )}
                   <div className="cert-card-body"><h3 className="cert-card-title">{cert.title}</h3><p className="cert-card-description">{cert.description}</p></div>
                 </div>
               </motion.article>
