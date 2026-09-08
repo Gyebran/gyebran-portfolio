@@ -9,7 +9,7 @@ export const profile = {
   github: 'https://github.com/Gyebran',
   whatsapp: 'https://wa.me/6282218831360',
   avatar: '/profile/aink.png',
-  availability: 'Open to internship, junior developer, and selected freelance opportunities.',
+  availability: 'Open to full-time junior developer roles and selected freelance opportunities.',
 }
 
 export const navigation = [
