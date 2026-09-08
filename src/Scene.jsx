@@ -2,7 +2,8 @@ import React, { Suspense, useMemo, useRef } from 'react'
 import { useFrame, useThree, extend } from '@react-three/fiber'
 import { Text, Float, Stars, useTexture, shaderMaterial } from '@react-three/drei'
 import * as THREE from 'three'
-import heroProfile from '../buat_porto.png'
+
+const HERO_PROFILE_PATH = '/profile/buat_porto.png'
 
 const FadeMaterial = shaderMaterial(
   { map: null },
@@ -67,7 +68,7 @@ export default function Scene() {
 
 function HeroItem({ mouse, isMobile, reduceMotion }) {
   const heroGroup = useRef()
-  const texture = useTexture(heroProfile)
+  const texture = useTexture(HERO_PROFILE_PATH)
   const aspect = texture.image.width / texture.image.height
   const height = isMobile ? 2.45 : 3.2
   const width = height * aspect
