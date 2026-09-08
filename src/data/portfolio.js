@@ -1,3 +1,9 @@
+import roomReservationImage from '../../aink.png'
+import aiPerformanceAdsCertificate from '../../AI-Powerd-Performace-Ads-Certification.png'
+import pythonCertificate from '../../Gyebran Nauri Haikal - Python.png'
+import businessPlanChampionCertificate from '../../Gyebran Nauri Haikal.png'
+import introProgrammingCertificate from '../../gyebran nauri haikal - Intro to Programming.png'
+
 export const profile = {
   name: 'Gyebran Nauri Haikal',
   shortName: 'Gyebran',
@@ -74,7 +80,7 @@ export const projects = [
     repo: 'https://github.com/Gyebran/WEB_PEMINJAMAN_RUANGAN',
     repoLabel: 'GitHub',
     live: 'https://web-peminjaman-ruangan.vercel.app/',
-    image: null,
+    image: roomReservationImage,
     featured: true,
   },
   {
@@ -121,25 +127,25 @@ export const projects = [
 export const certificates = [
   {
     id: 'ai-performance-ads',
-    image: null,
+    image: aiPerformanceAdsCertificate,
     title: 'AI-Powered Performance Ads',
     description: 'Certification focused on using AI-assisted approaches in performance advertising.',
   },
   {
     id: 'business-plan-champion',
-    image: null,
+    image: businessPlanChampionCertificate,
     title: 'Business Plan — 1st Champion',
-    description: 'Competition achievement recognizing a business plan presentation and business-development work.',
+    description: '1st place achievement in a business plan competition.',
   },
   {
     id: 'intro-programming',
-    image: null,
+    image: introProgrammingCertificate,
     title: 'Introduction to Programming',
     description: 'Foundational programming certification covering core programming concepts and problem solving.',
   },
   {
     id: 'python',
-    image: null,
+    image: pythonCertificate,
     title: 'Python',
     description: 'Programming certification focused on Python fundamentals and practical coding concepts.',
   },
